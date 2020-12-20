@@ -9,9 +9,43 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/opportunities" component={Opportunities} />
+          <Route exact path="/solutions" component={Solutions} />
+          <Route exact path="/contact-us" component={Contact} />
         </Switch>
       </div>{" "}
     </Router>
+  );
+}
+
+function Opportunities() {
+  // you can import the content component of this page "Opportunities"
+  return (
+    <div className="home-content">
+      <div className="home-content-top">
+        <p>Discover our numerous opportunities</p>
+      </div>
+    </div>
+  );
+}
+
+function Solutions() {
+  return (
+    <div className="home-content">
+      <div className="home-content-top">
+        <p>Solutions that help you.</p>
+      </div>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="home-content">
+      <div className="home-content-top">
+        <p>Feel free to reach us.</p>
+      </div>
+    </div>
   );
 }
 
