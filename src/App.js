@@ -95,14 +95,19 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/opportunities" component={Opportunities} />
-          <Route exact path="/solutions" component={Solutions} />
-          <Route exact path="/contact-us" component={Contact} />
-        </Switch>
-      </div>{" "}
+        <div ref={porto} className="home">
+          <div ref={scrollContainer} className="scroll">
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/opportunities" component={Opportunities} />
+              <Route exact path="/solutions" component={Solutions} />
+              <Route exact path="/contact-us" component={Contact} />
+            </Switch>
+          </div>
+        </div>
+        {/* --------------- */}
+      </div>
     </Router>
   );
 }
