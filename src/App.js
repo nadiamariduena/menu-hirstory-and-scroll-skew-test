@@ -115,8 +115,8 @@ function App() {
 function Opportunities() {
   // you can import the content component of this page "Opportunities"
   return (
-    <div className="home-content">
-      <div className="home-content-top">
+    <div className="routes-content">
+      <div className="routes-content-top">
         <p>Discover our numerous opportunities</p>
       </div>
     </div>
@@ -125,8 +125,8 @@ function Opportunities() {
 
 function Solutions() {
   return (
-    <div className="home-content">
-      <div className="home-content-top">
+    <div className="routes-content">
+      <div className="routes-content-top">
         <p>Solutions that help you.</p>
       </div>
     </div>
@@ -135,8 +135,8 @@ function Solutions() {
 
 function Contact() {
   return (
-    <div className="home-content">
-      <div className="home-content-top">
+    <div className="routes-content">
+      <div className="routes-content-top">
         <p>Feel free to reach us.</p>
       </div>
     </div>
@@ -154,6 +154,20 @@ function Home() {
         </h5>
       </div>
       {/* ---------- */}
+      <div className="home-content-middle">
+        <h5>
+          The <b>HAMBRG</b>, is a creative, engineer driven, global agency
+          working on advancing the software, advertising and design communities
+          to new heights.
+        </h5>
+      </div>
+      <div className="home-content-middle">
+        <h5>
+          The <b>HAMBRG</b>, is a creative, engineer driven, global agency
+          working on advancing the software, advertising and design communities
+          to new heights.
+        </h5>
+      </div>
       <div className="home-content-middle">
         <h5>
           The <b>HAMBRG</b>, is a creative, engineer driven, global agency
