@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-  
+import React from "react";
+import Header from "./components/Header";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </div>{" "}
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <div className="home-content">
+      <div className="home-content-top">
+        <h5>
+          The <b>HAMBRG</b>, is a creative, engineer driven, global agency
+          working on advancing the software, advertising and design communities
+          to new heights.
+        </h5>
+      </div>
     </div>
   );
 }
