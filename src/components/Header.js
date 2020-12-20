@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { withRouter, Link, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { withRouter, Link } from "react-router-dom";
 
 import Hamburger from "./Hamburger";
 // type: sfc snippet: const  = () => {
 //
 //1
-const Header = () => {
+const Header = ({ history }) => {
   //STATE FOR Menu withRouter related
 
   //
@@ -27,7 +27,17 @@ const Header = () => {
   const [disabled, setDisabled] = useState(false);
 
   //
-
+  //
+  // USEEFFECT for page change ------
+  //   this is related to the issue page change after the animation worked
+  useEffect(() => {
+    // Listen for page changes, after you add the code
+    //  with the function below, add this:
+    //
+    history.listen(() => {
+      setState({ clicked: false, menuName: "Menu" });
+    });
+  });
   //
   //
   // 3 this function is related to the event on click of the button menu, it will handle the state on change in step 2
