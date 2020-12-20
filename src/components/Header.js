@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { withRouter, Link, Route } from "react-router-dom";
 
 import Hamburger from "./Hamburger";
 // type: sfc snippet: const  = () => {
@@ -90,7 +90,7 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
 // withRouter will give access to the history PROP
 // with the history we will be able to determine if the URL has been changed, so
 // if it s change we will execute a certain command

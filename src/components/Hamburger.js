@@ -6,7 +6,7 @@ import gsap from "gsap";
 //
 // 1
 // type: sfc snippet: const  = () => {
-const Hamburger = () => {
+const Hamburger = ({ state }) => {
   // Here is how you access the state in the menuTwo.js :
   // const Hamburger = ({ state }) => {
 
